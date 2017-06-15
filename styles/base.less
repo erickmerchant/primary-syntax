@@ -1,0 +1,128 @@
+@import "syntax-variables";
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @light-gray;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .cursor-line {
+    background-color: @syntax-selection-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+atom-text-editor .search-results .marker .region {
+  background-color: transparent;
+  border: 1px solid @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected;
+}
+
+.syntax--block {
+  display: inline;
+}
+
+.syntax--heading,
+.syntax--bold {
+  font-weight: bold;
+}
+
+.syntax--italic {
+  font-style: italic;
+}
+
+.syntax--tag,
+.syntax--css.syntax--attribute-name,
+.syntax--control,
+.syntax--storage,
+.syntax--new,
+.syntax--language,
+.syntax--instanceof,
+.syntax--typeof {
+  color: hsl(190, 50%, 50%);
+}
+
+.syntax--method-call > .syntax--function,
+.syntax--function-call > .syntax--function,
+.syntax--template.syntax--string,
+.syntax--css .syntax--variable,
+.syntax--css .syntax--property-list,
+.syntax--attribute-name,
+.syntax--property-name,
+.syntax--property,
+.syntax--json > .syntax--quoted,
+.syntax--json > .syntax--quoted .syntax--string,
+.syntax--coffee.syntax--assignment,
+.syntax--heading,
+.syntax--link
+ {
+  color: hsl(110, 35%, 60%);
+}
+
+.syntax--decimal,
+.syntax--boolean,
+.syntax--numeric,
+.syntax--unit,
+.syntax--string,
+.syntax--regexp,
+.syntax--json.syntax--value > .syntax--quoted,
+.syntax--json.syntax--value > .syntax--quoted .syntax--string {
+  color: hsl(350, 50%, 60%);
+}
+
+.syntax--comment,
+.syntax--raw {
+  color: hsl(190, 10%, 40%);
+}
+
+.syntax--property-value,
+.syntax--property-list .syntax--punctuation,
+.syntax--property-list.syntax--punctuation {
+  color: @syntax-text-color;
+}
