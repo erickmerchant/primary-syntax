@@ -2,12 +2,12 @@
   "name": "primary-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "description": "Only the primary colors.",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/primary-syntax",
+  "repository": "https://github.com/erickmerchant/primary-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
