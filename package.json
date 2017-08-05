@@ -2,7 +2,7 @@
   "name": "primary-syntax",
   "theme": "syntax",
   "version": "3.1.0",
-  "description": "Only the primary colors.",
+  "description": "Red, green, and blue.",
   "keywords": [
     "syntax",
     "theme"
